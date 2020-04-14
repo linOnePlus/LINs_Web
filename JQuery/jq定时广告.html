@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时广告</title>
+		<script src="jquery-1.11.0.js"></script>
+		<script>
+			$(function(){
+				setInterval('showAD()',3000)
+			})
+			function showAD(){
+				$("#GG").show();
+				setTimeout('closeAD()',2000)
+			}
+			function closeAD(){
+				$('#GG').hide();
+			}
+		</script>
+	</head>
+	<body>
+		<img  src="guanggao.jpg" width="100%" id="GG" style="display: none;"/>
+	</body>
+</html>

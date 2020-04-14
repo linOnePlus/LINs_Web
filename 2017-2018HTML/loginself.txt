@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>资产管理系统登陆界面</title>
+    <style type="text/css">
+        body {
+            font-family: Microsoft YaHei;
+            color: black;
+        }
+        .tj {
+            font-family: Microsoft YaHei;
+            width: 50px;
+            height: 25px;
+            font-size: 13px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <p>
+        <h1 align="center">资产管理系统</h1>
+    </p>
+   
+    <form align="center">
+        <table width=270 height=100 align="center">
+
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" /></td>
+            </tr>
+
+
+            <tr>
+                <td>密 &nbsp;&nbsp;码：</td>
+                <td><input type="password" /></td>
+            </tr>
+        </table>
+        <br/>
+        <input type="button" value=" 登陆" class=" tj" />
+        <!--登陆按钮-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="register.html" target="_self ">
+            <input type="button" value="注册" class=" tj" /><!--注册按钮，并打开连接-->
+        </a>
+
+
+    </form>
+
+</body>
+</html>

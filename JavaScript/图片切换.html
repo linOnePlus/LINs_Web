@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片切换</title>
+		<script>
+			var a =0;
+			function  index() {
+				setInterval("changimg()",1000)
+			}
+			function changimg(){
+				var x = document.getElementById("idname");//获取到要操作的页面元素
+				var b = a%3+1;//通过文件名来指定轮播规则
+				x.src="./资源/img/"+b+".jpg"
+				a++;
+			}
+		</script>
+	</head>
+	<body onload="index()">  
+	<!-- //onload事件 文档加载完成就完成该事件 并触发一个函数index -->
+		<img src="./资源/img/1.jpg"  height="10%" id="idname"/>
+	</body>
+</html>

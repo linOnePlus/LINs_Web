@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>内容替换JS</title>
+		<script>
+			function lin1(){
+				var a =document.getElementById("name");
+				a.innerHTML="记得上面那个ID要加双引号";
+				// document.getElementById("name").innerHTML="fuck";
+				// 修改innerHTML属性
+			}
+			function lin2(){
+				var b= document.getElementById("name2");
+				b.src="../HTML&CSS/img01/1.jpg"//修改SRC属性
+			}
+		</script>
+	</head>
+	<body>
+
+		<input type="button" value="点击替换" style="height: 50px; width: 80px;" onclick="lin1()" />
+		<p id="name">这里的内容会被替换掉</p>
+		<input type="button" value="点击替换图片" style="height: 50px; width: 120px;" onclick="lin2()" />
+		<br />
+		<img src="../2017-2018HTML/CSS/image/4a51167a-89d5-4710-aca2-7c76edc355b8-thumbnail.jpg" height="10%" width="20%" id="name2" />
+	</body>
+</html>

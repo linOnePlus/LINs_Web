@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时广告</title>
+		<script>
+			function init(){
+				setTimeout("kaiqi()",5000)
+			}
+			function kaiqi(){
+				var a =document.getElementById("guanggao")
+				a.style.display="block";
+				setTimeout("guanbi()",5000)
+			}
+			function guanbi(){
+				var a =document.getElementById("guanggao")
+				a.style.display="none";
+			}
+			
+		</script>
+		
+	</head>
+	<body onload="init()">
+		<img src="./资源/img/guanggao.jpg" width="100%" id="guanggao"style="display: none;"/>
+	</body>
+</html>

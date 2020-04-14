@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动画显示隐藏</title>
+		<script src="jquery-1.11.0.js"></script>
+		<script>
+			$(function(){
+				$("#button1").click(function(){
+					$('img').show(3000);
+				})
+				$("#button2").click(function(){
+					$('img').hide(3000);
+				})
+				$('#button3').click(function(){
+					$('img').slideDown(2000);
+				})
+				$('#button4').click(function(){
+					$('img').slideUp(2000);
+				})
+				$('#button5').click(function(){
+					$('img').fadeIn(2000);
+				})
+				$('#button6').click(function(){
+					$('img').fadeOut(2000);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" value="普通显示" id="button1" />
+		<input type="button" value="普通隐藏" id="button2" />
+		<input type="button" value="滑动显示" id="button3" />
+		<input type="button" value="滑动隐藏" id="button4" />
+		<input type="button" value="淡入淡出显示" id="button5" />
+		<input type="button" value="淡入淡出隐藏" id="button6" />
+		<img src="../sun2.jpg" style="display: none;" width="80%" />
+	</body>
+</html>

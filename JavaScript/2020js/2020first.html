@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> long time no see my js</title>
+	<script>
+		/* 	alert("hello my js")
+		document.write("<h1>hello my js</h1>") */
+		function show() {
+			var b = document.getElementById("mytext").innerHTML;
+			/* alert(b)
+			alert(typeof b) */
+			if (b == '') {
+				document.getElementById("mytext").innerHTML = "hello js"
+			} else {
+				document.getElementById("mytext").innerHTML = "close js"
+			}
+		}
+		
+	</script>
+</head>
+
+<body>
+	<div style="width: 80px; height: 30px;" id="mytext"></div>
+	<input type="button" onclick="show()" value="click me" />
+</body>
+
+</html>

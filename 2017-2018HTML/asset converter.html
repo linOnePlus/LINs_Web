@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Asset converter</title>
+<style type="text/css">
+div
+{
+    margin-top: 13%;
+    
+}
+.kk
+{
+    border-radius: 20px;
+    background:;
+    text-align: center;
+    border:1px solid;
+    font-family: Microsoft YaHei;
+            width: 88px;
+            height: 80px;
+            font-size: 16px;
+}
+.xz
+{
+    border-right: cadetblue;
+    background-color:cyan;
+    text-align:center;
+    border:1px solid;
+    font-family: Microsoft YaHei;
+            width: 170px;
+            height: 80px;
+            font-size: 17px;
+}
+body
+{
+   font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+}
+</style>
+</head>
+<body >   
+    <h2 align="center">Asset converter</h1>
+        <hr style="width:100%; border:0.5px solid rgb(rgb(230, 226, 248), green, blue);"></hr>
+    <div >
+    <form align="center" >
+        <input type="amount1" placeholder="amount" class="kk">
+        <select id="select" onkeydown="Select.del(this,event)" onkeypress="Select.write(this,event)"class="xz">  
+            <option value="">Coin name</option>
+            <option value="BTC">BTC</option>
+            <option value="EOS">EOS</option>  
+            <option value="ETH">ETH</option>  
+            <option value="LTC">LTC</option>
+        </select>
+        =
+        <input type="amount2" placeholder="amount" class="kk">
+        <select class="xz">
+                <option value="BTC">BTC</option>
+                <option value="EOS">EOS</option>  
+                <option value="ETH">ETH</option>  
+                <option value="LTC">LTC</option>
+        </select>
+
+        <script>  
+            var Select = {  
+            del : function(obj,e){  
+                if((e.keyCode||e.which||e.charCode) == 8){  
+                    var opt = obj.options[0];  
+                    opt.text = opt.value = opt.value.substring(0, opt.value.length>0?opt.value.length-1:0);  
+                }  
+            },  
+            write : function(obj,e){  
+                if((e.keyCode||e.which||e.charCode) == 8)return ;  
+                    var opt = obj.options[0];  
+                    opt.selected = "selected";  
+                    opt.text = opt.value += String.fromCharCode(e.charCode||e.which||e.keyCode);  
+                }  
+            }  
+      
+            function test(){  
+                alert(document.getElementById("select").value);  
+            }  
+        </script>  
+        </form>
+    </div>
+    </body>   
+    </html>  
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var word3 = 0;
+        word5 = "没写var"
+        function speak(word1, word2) {
+            alert('hello' + word1 + 'your age is' + word2);
+            word3 = 10;
+            return word3;
+        }
+        function testreturn() {
+            alert(delete word5+''+delete word3)
+            alert(speak() + '全局is' + word3) //word3为全局变量 先执行speak（） 再用返回值10来使用
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="speak('lin',20)" value="speak" />
+    <input type="button" onclick="testreturn()" value="testreturn">
+</body>
+</html>

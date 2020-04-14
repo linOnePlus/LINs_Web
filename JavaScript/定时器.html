@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时器</title>
+		<script>
+			var x;
+			 function  set() {
+			 	var i = new Date();//创建时间对象,默认当前时间 不设置的话
+			 	document.getElementById("xianshi").value=i;
+			 }
+			 function start() {
+			 	var a=window.setInterval("set()",500);//启动定时器 
+				x=a;//返回值ID赋给全局变量
+			 }
+			 function stop(){
+				 window.clearInterval(x);//根据ID取消定时器
+			 }
+		</script>
+	</head>
+	<body>
+		<input type="text"  id="xianshi" style="height: 20% ;width: 50%;"/>
+		<input type="button" style="width: 5%; height: 5%;" value="开始计时"  onclick="start()"/>
+		<input type="button" style="width: 5%; height: 5%;" value="停止计时" onclick="stop()" />
+	</body>
+</html>

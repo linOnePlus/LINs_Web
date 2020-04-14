@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+			<!--
+			1. 创一个最外层div
+			2. 第一部份: LOGO部分: 嵌套三个div
+			3. 第二部分: 导航栏部分 : 放置5个超链接
+			4. 第三部分: 轮播图 
+			5. 第四部分: 
+			6. 第五部分: 直接放一张图片
+			7. 第六部分: 抄第四部分的
+			8. 第七部分: 放置一张图片
+			9. 第八部分: 放一堆超链接
+		-->
+		<style>
+			.logo{
+				float: left;
+				width: 33%;
+				/*border-width:1px ;
+				border-style: solid;*/
+				line-height: 60px;
+			}
+			#daohang{
+			  height: 50px;
+			  background-color: black;
+			}
+			.font{
+				color: white;
+				font-family: "microsoft yahei";
+				font-size: 20px;
+				text-decoration: none;/*去除下划线*/
+				line-height:50px; <!--拉长居中-->
+			}
+		</style>
+		<div>
+			<!--2. 第一部份: LOGO部分: 嵌套三个div-->
+			<div class="logo">
+				<img src="../img/logo2.png" />
+			</div>
+			<div class="logo">
+				<img src="../img/header.jpg" />
+			</div>
+			<div class="logo">
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+				<a href="#">购物车</a>
+			</div>
+			<div style="clear: both;"></div><!--清楚浮动 浮动和非浮动的布局不在同一空间 不清除就会叠在一起-->
+			<!-- 第二部分: 导航栏部分 : 放置5个超链接-->
+			<div id="daohang">
+				<a href="#" class="font">首页</a>
+				<a href="#" class="font">手机数码</a>
+				<a href="#" class="font">电脑办公</a>
+				<a href="#" class="font">鞋子包包</a>
+				<a href="#" class="font">香烟就睡尼是</a>
+			</div>
+			<!-- 第三部分: 轮播图 -->
+			<div style="width: 100%;">
+				<img src="../img/1.jpg"/>
+			</div>
+			<!--第四部分: 各种嵌套 -->
+			<!--第五部分: 直接放一张图片 -->
+			<!-- 第六部分: 抄第四部分的-->
+			<!--第七部分: 放置一张图片 -->
+			<!--第八部分: 放一堆超链接 -->
+		</div>
+	</body>
+</html>

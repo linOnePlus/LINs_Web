@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQ替换文本</title>
+		<script type="text/javascript " src="jquery-1.11.0.js"></script>
+		<script>
+			//需要先写一个文档加载完成事件
+			$(function(){
+				$("#jq").click(function(){
+					// $("#div1").html("jquery方式替换成功")
+					
+					//JQ对象转JS
+					var $div =$("#div1")//jQ对象数组
+					var jsDiv = $div.get(0);//$div[0]也可以
+					jsDiv.innerHTML="JQ转JS转换成功"
+				})
+			})
+			
+			function change(){
+				var div= document.getElementById('div2');
+				// div.innerHTML='js替换成功';
+				//js对象转JQ
+				$(div).html("js转JQ转换成功")
+				
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点我用jq替换文本" id="jq"/>
+		<div id="div1">这里的文本会被JQ替换掉</div>
+		<input type="button" value="点我用JS替换文本" onclick="change()"/>
+		<div id="div2">这里的文本会被Js替换掉</div>
+	</body>
+</html>

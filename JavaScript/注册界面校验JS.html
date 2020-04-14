@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function checkForm(){
+				var a =document.getElementById("username");
+				var avalue =a.value;//获取输入的内容
+			    if (avalue.length<=6) {//判断输入内容的长度
+				alert("您输入的用户名有误");
+			    	return false;
+			    }
+			    var  b =document.getElementById("password1");
+				var bvalue =b.value;
+					if(/^[a-zA-Z\d_]{8,}$/.test(bvalue)){//利用正则表达式判断大于大于8位的密码 如果满足规则返回TRUE 不满足返回False 
+					
+					}else{
+						alert("您输入的密码不满足需要");
+ 						return false;
+					}
+			 
+			  var c = document.getElementById("email1");
+			  var cvalue = c.value;
+			  if(/^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/.test(cvalue)){
+				//满足正则表达式后不返回TRUE 什么操作都不执行 
+			  } else {
+				  alert("您输入的邮箱不符合要求");
+				  return false ;
+			  }
+		return true;
+			  }
+		
+		</script>
+	</head>
+	<body>
+		<form action="https://www.baidu.com/"  onsubmit=" return checkForm() " >
+		<p>用户名：<input  type="text" placeholder="请输入用户名" id="username"/></p>
+		<p>密码：<input  type="password" placeholder="请输入密码 只能输入8位以上长度 " id="password1"/></p>
+		<p>验证邮箱：<input  type="text" placeholder="请输入注册邮箱" id="email1"/></p>
+		<input type="submit"  value="提交"/>
+		</form>
+	</body>
+</html>

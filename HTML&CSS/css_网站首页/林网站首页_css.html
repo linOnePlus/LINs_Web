@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			1. 创一个最外层div
+			2. 第一部份: LOGO部分: 嵌套三个div
+			3. 第二部分: 导航栏部分 : 放置5个超链接
+			4. 第三部分: 轮播图 
+			5. 第四部分: 
+			6. 第五部分: 直接放一张图片
+			7. 第六部分: 抄第四部分的
+			8. 第七部分: 放置一张图片
+			9. 第八部分: 放一堆超链接
+		-->
+		<style>
+			.logo{
+				float: left;
+				width: 33%;
+				/* border: 1px solid red; */
+				height: 60px;
+				line-height: 60px;
+			}
+			#daohang{
+			  height: 50px;
+			  background-color: black;
+			  width: 100%;
+			  line-height: 50px;
+			}
+			.font{
+				color: white;
+				font-family: "microsoft yahei";
+				font-size: 20px;
+				text-decoration: none;/*去除下划线*/
+				line-height:50px; <!--拉长居中-->
+			}
+			a[href]{
+				color: #000000;
+				text-decoration: none;
+			
+			}
+		
+			.shangping{
+				
+				float: left;
+				width: 15%;
+				height: 250px;
+				border: 2px solid white;
+			}
+			p{
+				line-height: 2px;
+				text-align: center;
+			}
+		</style>
+		<div>
+			<!--2. 第一部份: LOGO部分: 嵌套三个div-->
+			<div class="logo">
+				<img src=../img02/img/logo2.png> </div> <div class="logo">
+				<img src="../img01/header.jpg" />
+			</div>
+			<div class="logo" style="height: 70px; text-decoration: none;">
+				<a href="#" style="padding-left :440px;">登录</a>
+				<a href="#">注册</a>
+				<a href="#">购物车</a>
+			</div>
+			<div style="clear: both;"></div>
+			<!--清楚浮动 浮动和非浮动的布局不在同一空间 不清除就会叠在一起-->
+			<!-- 第二部分: 导航栏部分 : 放置5个超链接-->
+			<div id="daohang">
+				<a href="#" class="font">首页</a>
+				<a href="#" class="font">手机数码</a>
+				<a href="#" class="font">电脑办公</a>
+				<a href="#" class="font">鞋子包包</a>
+				<a href="#" class="font">香烟就睡尼是</a>
+				<div style="float: right; ">
+					<form action="林网站首页_css.html" method="get">
+						<input type="text" placeholder="请输入搜索内容" />
+						<input type="submit" value="提交" />
+					</form>
+				</div>
+			</div>
+
+			<div style="clear: both;"></div>
+			<!-- 第三部分: 轮播图 -->
+			<div style="width: 100%;">
+				<img src="../img01/1.jpg" style="width: 100%;" />
+			</div>
+			<!--第四部分: 各种嵌套 -->
+			<div>
+				<!-- 上面一行 -->
+				<div>
+					<h2>最新商品<img src="../img01/title2.jpg" /></h2>
+				</div>
+				<!-- 左侧商品图 -->
+				<div style="width: 15%; height: 480px; float: left;">
+					<img src="../img01/big01.jpg " width="100%" height="100%" />
+				</div>
+				<!-- 右侧商品图 -->
+				<div style="width: 84%; height:480px ;float: left;">
+					<div style="width: 50%; height: 240px; float: left;">
+						<img src="../img01/middle01.jpg" height="100%" width="100%" />
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="90%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<!--第五部分: 直接放一张图片 -->
+
+			<br />
+			<div style=" width: 100%; height: 130px;">
+				<img src="../img01/ad.jpg" width="100% " />
+			</div>
+			<br />
+			<!-- 第六部分: 抄第四部分的-->
+			<div>
+				<!-- 上面一行 -->
+				<div>
+					<h2>最新商品<img src="../img01/title2.jpg" /></h2>
+				</div>
+				<!-- 左侧商品图 -->
+				<div style="width: 15%; height: 480px; float: left;">
+					<img src="../img01/big01.jpg " width="100%" height="100%" />
+				</div>
+				<!-- 右侧商品图 -->
+				<div style="width: 84%; height:480px ;float: left;">
+					<div style="width: 50%; height: 240px; float: left;">
+						<img src="../img01/middle01.jpg" height="100%" width="100%" />
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="90%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+					<div class="shangping">
+						<img src="../img01/timg.jpg" width="100%" height="80%" />
+						<p>屠龙宝刀</p>
+						<p>$998</p>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<!--第七部分: 放置一张图片 -->
+			<br />
+			<div style="width: 100%; height: 80px;">
+				<img src="../img01/footer.jpg" width="100%" />
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<!--第八部分: 放一堆超链接 -->
+			<div style="text-align: center; ">
+				<a href="#">关于我们</a>
+				<a href="#">联系我们 </a>
+				<a href="#">招贤纳士</a>
+				<a href="#"> 法律声明</a>
+				<a href="#">友情链接 </a>
+				<a href="#">支付方式</a>
+				<a href="#">配送方式</a>
+				<a href="#">服务声明</a>
+				<a href="#">广告声明 </a>
+				<br />
+				Copyright © 2005-2016 林氏商城 版权所有
+			</div>
+		</div>
+	</body>
+</html>
